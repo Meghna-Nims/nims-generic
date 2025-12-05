@@ -221,8 +221,8 @@ header.fixed-header .contact-info {
 }
 
 .right-panel{
-  width:360px;
-  max-width:50%;
+  width: 385px;
+    max-width: 90%;
   background:var(--brand);
   border-radius:8px;
   padding:18px;
@@ -504,7 +504,7 @@ header.fixed-header .contact-info {
     color: #ffc720;
     font-weight: 600;
   }
-
+  
   .mob-controls {
     margin-top: 18px;
   }
@@ -546,10 +546,18 @@ header.fixed-header .contact-info {
 
 .programs-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   gap: 22px;
 }
-
+.row-1 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.row-2 {
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  width: 100%;
+    max-width: 80%;
+    margin: 22px auto;
+}
 .program-card {
   background: #ffffff;
   padding: 18px 20px;
@@ -668,7 +676,10 @@ header.fixed-header .contact-info {
     position: relative;
     top: 75px;
 }
-
+.card-body.new-added-card {
+    margin-left: 90px;
+    min-height: 166px;
+}
 .card-top {
   display: flex;
   flex-direction: column;
@@ -876,9 +887,9 @@ header.fixed-header .contact-info {
 
 .testimonials-section {
   padding: 48px 20px;
-  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
   color: #111;
   background: #fff;
+  margin: 60px 0;
 }
 
 .testimonials-inner {
@@ -985,7 +996,9 @@ header.fixed-header .contact-info {
 /*-- testimonials end ---*/
 
 /*-- steps start ---*/
-
+.apply-steps{
+  margin-bottom: 70px;
+}
 .steps-title {
     text-align: center;
     font-size: 36px;
@@ -995,19 +1008,19 @@ header.fixed-header .contact-info {
     .apply-steps .grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-gap: 10px;
+        grid-gap: 12rem;
         position: relative;
     }
 
     .apply-steps .grid::before {
         content: "";
-        position: absolute;
-        top: 51%;
-        left: 10%;
-        width: 79%;
-        height: 2px;
-        background: #cf2027;
-        z-index: 0;
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    width: 91%;
+    height: 2px;
+    background: #cf2027;
+    z-index: 0;
     }
 
     .apply-steps .each-circle {

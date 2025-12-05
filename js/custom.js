@@ -28,6 +28,18 @@ $(".partner-slider").owlCarousel({
   }
 });
 
+const wrap = document.querySelector(".cards-wrap");
+const prev = document.querySelector(".testi-prev");
+const next = document.querySelector(".testi-next");
+
+next.addEventListener("click", () => {
+  wrap.scrollBy({ left: 360, behavior: "smooth" });
+});
+
+prev.addEventListener("click", () => {
+  wrap.scrollBy({ left: -360, behavior: "smooth" });
+});
+
 $(function () {
     var $section = $("#accreditation-affiliation");
     var $owl = $section.find(".acc-owl");
