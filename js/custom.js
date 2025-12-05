@@ -1,3 +1,5 @@
+//header
+
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("header");
 
@@ -10,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//logo slider
 $(".partner-slider").owlCarousel({
   loop:true,
   margin:60,
@@ -28,6 +31,8 @@ $(".partner-slider").owlCarousel({
   }
 });
 
+
+//testimonials
 const wrap = document.querySelector(".cards-wrap");
 const prev = document.querySelector(".testi-prev");
 const next = document.querySelector(".testi-next");
@@ -222,3 +227,4 @@ $owl.owlCarousel({
 
         // Initialize
         updateSteps();
+
