@@ -1217,6 +1217,25 @@ footer .row .col-md-4 .text-right {
   .left-card{width:70%;padding:38px;}
   .right-panel{width:420px;max-width:95%;margin:0 auto;top:0;position:relative;}
 
+   .rankings-wrap{padding:18px 14px 48px;}
+  .rankings-wrap h3{font-size:32px;margin-bottom:65px;}
+  .grid{gap:10px; grid-template-columns: 0.9fr 1.2fr 0.9fr;}
+  .card.top p{padding-left:0; padding-top:0px;}
+  .card{padding:18px;min-height:110px;}
+  .card .img{flex:0 0 120px;max-width:120px;padding:6px;}
+  .card .img img{width:75%;}
+  .center-stack .cert p {
+font-size: 14px; padding-right: 30px;}
+.left-text {
+    font-size: 15px !important;
+    line-height: 1.6 !important;}
+  .large-left, .large-right{min-height:300px;padding:36px 20px;}
+  .center-stack .cert{min-height:130px;padding:10px;}
+  .badge-pill{top:-18px;left:14px;padding:8px 14px;font-size:15px;}
+  .badge-pill.rank{
+    top: -6px; padding: 6px 16px;};
+  
+
    .accreditation-affiliation h3{font-size:32px;margin-bottom:36px;}
   .acc-owl .card-item{max-width:340px;padding-top:56px;min-height:150px;margin-bottom:32px;}
   .accreditation-affiliation .acc-owl .card-item .img{height:96px;width:96px;top:-48px;padding:11px;}
@@ -1262,6 +1281,7 @@ footer .row .col-md-4 .text-right {
   .subheadline{font-size:20px;}
   .right-panel{max-width:480px;top:12px;}
 
+  
   .accreditation-affiliation h3{font-size:28px;margin-bottom:32px;}
   .acc-owl .card-item{max-width:300px;padding-top:54px;min-height:145px;margin-bottom:28px;}
   .accreditation-affiliation .acc-owl .card-item .img{height:90px;width:90px;top:-45px;padding:10px;}
@@ -1319,6 +1339,9 @@ min-width: 140px;;
 .timeline::before {
 width: 98%;
 }
+.programs {
+   margin-top: -15px;
+  }
  .programs-container { width: 94%; }
   .programs-heading h3 { font-size: 32px; margin-bottom: 30px; }
   .row-1 { grid-template-columns: repeat(3, 1fr); gap: 18px; }
@@ -1439,6 +1462,8 @@ width: 95%;top: 38%;}
   .bubble {
 
     padding: 18px;}
+    .center-stack {
+      gap: 16px;}
 }
 @media (max-width: 575.98px) {
     .banner{padding:52px 0;}
