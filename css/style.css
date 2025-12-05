@@ -1233,6 +1233,9 @@ footer .row .col-md-4 .text-right {
   .cards-wrap { padding: 80px 18px; gap: 20px; }
   .test-card { flex: 0 0 320px; height: 330px; padding: 20px; }
 
+    .partner-logos { padding:24px 0; }
+  .partner-slider img { height:38px; }
+  
 }
 
 @media (max-width: 991.98px) {
@@ -1274,7 +1277,7 @@ footer .row .col-md-4 .text-right {
   .card-text {
     line-height: 1.2;
   }
-  
+  .partner-slider img { height:22px; }
 }
 @media (max-width: 1199.98px) and (min-width: 769px) {
   .apply-steps .grid {
@@ -1355,6 +1358,8 @@ footer .row .col-md-4 .text-right {
   }
   .card-text { font-size: 14px; line-height: 1.6; }
   .mob-controls { display: flex; margin-top: 12px; }
+    .partner-logos { padding:20px 0; }
+  .partner-slider img { height:20px; }
 }
 @media (max-width: 575.98px) {
   .steps-title {
@@ -1429,8 +1434,12 @@ footer .row .col-md-4 .text-right {
   .mob-controls { display: flex; gap: 8px; justify-content: flex-end; margin-top: 10px; }
   .mob-controls .btn { padding: 6px 10px; font-size: 14px; }
   .cards-wrap::-webkit-scrollbar { height: 8px; }
-}
-
-.cards-wrap:focus { outline: none; }
+  
+  .cards-wrap:focus { outline: none; }
 .test-card:focus { outline: none; box-shadow: 0 0 0 4px rgba(0,0,0,0.06); 
 }
+
+  
+  
+}
+
