@@ -139,6 +139,7 @@ header.fixed-header .contact-info {
 
 .banner-inner{
   width:1200px;
+  padding-top: 80px;
   max-width:calc(100% - 80px);
   display:flex;
   gap:10rem;
@@ -1211,6 +1212,11 @@ footer .row .col-md-4 .text-right {
 
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 1199.98px) {
+ .banner{height:auto;padding:80px 0;}
+  .banner-inner{flex-direction:column;gap:40px;align-items:center;}
+  .left-card{width:70%;padding:38px;}
+  .right-panel{width:420px;max-width:95%;margin:0 auto;top:0;position:relative;}
+
    .accreditation-affiliation h3{font-size:32px;margin-bottom:36px;}
   .acc-owl .card-item{max-width:340px;padding-top:56px;min-height:150px;margin-bottom:32px;}
   .accreditation-affiliation .acc-owl .card-item .img{height:96px;width:96px;top:-48px;padding:11px;}
@@ -1249,6 +1255,13 @@ footer .row .col-md-4 .text-right {
 }
 
 @media (max-width: 991.98px) {
+  .banner{padding:70px 0;}
+  .banner-inner{max-width:90%;gap:36px;}
+  .left-card{padding:34px;}
+  .headline{font-size:36px;line-height:1.15;}
+  .subheadline{font-size:20px;}
+  .right-panel{max-width:480px;top:12px;}
+
   .accreditation-affiliation h3{font-size:28px;margin-bottom:32px;}
   .acc-owl .card-item{max-width:300px;padding-top:54px;min-height:145px;margin-bottom:28px;}
   .accreditation-affiliation .acc-owl .card-item .img{height:90px;width:90px;top:-45px;padding:10px;}
@@ -1342,6 +1355,16 @@ width: 98%;
 }
 
 @media (max-width: 769px) {
+  .banner{padding:60px 0;}
+  .banner-inner{gap:32px;max-width:92%;}
+  .left-card{padding:28px;}
+  .headline{font-size:32px;}
+  .subheadline{font-size:18px;}
+  .logos{flex-wrap:wrap;gap:14px;}
+  .logo{min-width:70px;height:32px;}
+  .logo img{height:22px;}
+  .right-panel{max-width:100%;top:10px;}
+
   .accreditation-affiliation h3{font-size:24px;margin-bottom:26px;}
   .acc-owl .card-item{max-width:260px;padding-top:52px;min-height:140px;margin-bottom:22px;}
   .accreditation-affiliation .acc-owl .card-item .img{height:82px;width:82px;top:-41px;padding:9px;}
@@ -1418,6 +1441,13 @@ width: 95%;top: 38%;}
     padding: 18px;}
 }
 @media (max-width: 575.98px) {
+    .banner{padding:52px 0;}
+  .banner-inner{gap:28px;}
+  .left-card{padding:24px;border-radius:16px; width: 90%;}
+  .headline{font-size:28px;}
+  .subheadline{font-size:17px;}
+  .right-panel{max-width:100%;top:16px;}
+
   .accreditation-affiliation h3{font-size:22px;margin-bottom:20px;}
   .acc-owl .card-item{max-width:calc(50% - 12px);padding-top:48px;min-height:130px;margin-bottom:16px;}
   .accreditation-affiliation .acc-owl .card-item .img{height:76px;width:76px;top:-38px;padding:8px;}
@@ -1544,6 +1574,14 @@ width: 95%;top: 38%;}
   
 }
 @media (max-width:468px){
+  .banner{padding:46px 0;}
+  .left-card{padding:20px;}
+  .headline{font-size:24px;}
+  .subheadline{font-size:16px;}
+  .logo{min-width:60px;height:26px;}
+  .logo img{height:20px;}
+  .right-panel{top:20px;}
+
   .accreditation-affiliation h3{font-size:20px;margin-bottom:16px;}
   .acc-owl .card-item{max-width:100%;padding-top:44px;min-height:120px;margin-bottom:12px;}
   .accreditation-affiliation .acc-owl .card-item .img{height:68px;width:68px;top:-34px;padding:6px;}
