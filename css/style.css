@@ -1211,171 +1211,139 @@ footer .row .col-md-4 .text-right {
 
 
 /* ---------------- RESPONSIVE ---------------- */
-
-@media(max-width:900px) {
-  .scholar-left { width: 65%; padding: 40px 26px; }
-  .scholar-title { font-size: 32px; }
+@media (max-width: 1199.98px) {
+  .scholarship-section {
+    min-height: 520px;
+    background-position: center right;
+  }
+  .scholar-left {
+    width: 50%;
+    padding: 70px 90px;
+  }
+  .scholar-title { font-size: 36px; }
+  .scholar-hero .big { font-size: 24px; }
+  .scholar-logo { width: 40%; }
 }
 
+@media (max-width: 991.98px) {
+  .apply-steps .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  .apply-steps .each-circle {
+    width: 85px;
+    height: 85px;
+  }
+  .apply-circle-subheading {
+    font-size: 13px;
+  }
+    .scholarship-section {
+    min-height: 480px;
+    background-position: center;
+  }
+  .scholar-left {
+    width: 50%;
+    padding: 60px 40px;
+  }
+  .scholar-title { font-size: 32px; margin-bottom: 18px;}
+  .scholar-lead { font-size: 14px; }
+  .scholar-hero .big { font-size: 22px; }
+  .scholar-logo { width: 50%; margin-bottom: 18px; }
+  .scholar-btn { padding: 10px 22px; }
+  
+}
+@media (max-width: 1199.98px) and (min-width: 769px) {
+  .apply-steps .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    overflow: visible;
+  }
+  .apply-steps .grid::before {
+    display: block;
+            top: 30%;
+        left: 5%;
+        width: 85%;
+        height: 2px;
+  }
+  .apply-steps .each-circle {
+    width: 80px;
+    height: 80px;
+  }
+  .apply-circle-subheading {
+    font-size: 13px;
+  }
+}
 
-@media (max-width: 768px) {
-  .programs-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 769px) {
+  .apply-steps .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.4rem;
+    justify-items: center;
+  }
+  .apply-steps .each-circle {
+    width: 70px;
+    height: 70px;
+  }
+  .apply-circle-subheading {
+    font-size: 12px;
+    max-width: 100px;
+  }
+  .apply-steps .grid::before {
+    width: 84%;
+    left: 6%;
+    height: 1.5px;
+  }
+  
+}
+@media (max-width: 575.98px) {
+  .steps-title {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+  .apply-steps .grid {
+    display: none !important;
+  }
+  .apply-steps .each-circle {
+    width: 72px;
+    height: 72px;
+    flex: 0 0 auto;
+  }
+  .apply-circle-subheading {
+    font-size: 12px;
+    padding-top: 6px;
+    max-width: 100px;
+  }
+  .apply-steps .collapse-box {
+    margin-top: 18px;
+    padding: 14px;
+  }
+  .apply-steps .navigation-buttons {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .apply-steps .navigation-buttons .newbtn {
+    padding: 8px 14px;
+    font-size: 14px;
   }
 
-  .programs-heading h2 {
-    font-size: 32px;
+  .scholarship-section {
+    min-height: 340px;
+    background-position: center top;
+    padding: 0;
   }
-  .timeline{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px 40px;
-    padding-bottom: 80px;
-  }
-  .bubble{ min-width: 170px; max-width: 260px; padding: 14px 18px; border-radius: 40px; }
-  .logos-bar {
-    gap: 40px;
-    padding: 20px;
-  }
-  .logos-bar img {
-    height: 32px;
-  }
-  .scholarship-section { padding: 40px 0; }
   .scholar-left {
     width: 100%;
-    border-radius: 0;
-    padding: 30px 20px;
+    padding: 30px 18px;
+    background: rgba(20,51,88,0.95);
   }
-  .scholar-title { font-size: 28px; }
-   .testimonials-inner { grid-template-columns: 1fr; gap: 18px; }
-  .testimonials-left { flex-direction: row; align-items: center; }
-  .quote-mark { font-size: 34px; }
-  .testimonials-title { font-size: 22px; }
-  .test-card { flex: 0 0 88%; }
-  .cards-wrap { padding: 22px 16px; }
-  .timeline {
-    display: block;
-    padding: 30px 8px 40px;
-  }
-
-  .timeline::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 8%;
-    bottom: 8%;
-    width: 3px;
-    transform: translateX(-50%);
-    background: repeating-linear-gradient(#222 0 6px, transparent 6px 12px);
-    border-top: none;
-    z-index: 1;
-  }
-
-  .timeline-item {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    padding: 16px 0;
-    margin: 0;
-  }
-
-  .bubble {
-    margin: 0 auto;
-    width: calc(100% - 80px);
-    max-width: 520px;
-    min-width: auto;
-    transform: none !important;
-    text-align: left;
-    padding: 18px 16px;
-  }
-
-  .timeline-item::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 3px;
-    background: repeating-linear-gradient(#222 0 6px, transparent 6px 12px);
-    z-index: 1;
-    top: 50%;
-    height: 0;
-  }
-
-  .timeline > .timeline-item:nth-child(odd) .bubble {
-    margin-left: -8px; 
-    transform: translateX(-48%); 
-  }
-  .timeline > .timeline-item:nth-child(even) .bubble {
-    margin-left: auto;
-    transform: translateX(48%);
-  }
-
+  .scholar-logo { width: 38%; margin-bottom: 10px; }
+  .scholar-title { font-size: 20px; font-weight: 800; margin-bottom: 8px; }
+  .scholar-lead { font-size: 13px; line-height: 1.5; margin-bottom: 10px; }
+  .small-line { margin-top: 4px; display: block; font-size: 12px; }
+  .scholar-hero .big { font-size: 18px; }
+  .scholar-hero .sub { font-size: 12px; opacity: 0.95; }
+  .scholar-btn { display: inline-block; padding: 9px 18px; font-size: 14px; }
 }
-
-@media (max-width: 480px) {
-  .programs-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .program-card {
-    padding: 14px;
-    gap: 12px;
-  }
-
-  .program-icon {
-    width: 48px;
-    height: 48px;
-  }
-
-  .program-icon img {
-    width: 28px;
-  }
-  .placements { padding: 40px 10px; }
-  .placements-title h2 { font-size: 28px; }
-
-  .placements-row { flex-direction: column; gap: 30px; }
-
-  .placement-card {
-    width: 90%;
-    max-width: 380px;
-  }
-
-  .student-photo {
-    width: 120px;
-    transform: translateY(-8px);
-  }
-
-  .card-body {
-    margin-left: 52px;
-    padding: 14px 16px;
-  }
-
-  .company-pill {
-    bottom: -16px;
-    padding: 8px 12px;
-  }
-   .timeline{
-    grid-template-columns: 1fr;
-    gap: 18px 0;
-    padding-bottom: 40px;
-  }
-  .bubble{ width: 88%; min-width: auto; max-width: none; border-radius: 34px; text-align: left; padding: 12px; }
-  .timeline-item::after{ height: 36px; }
-  .timeline-item::before{ width: 6px; height: 6px; }
-  .timeline::before{ left: 6%; right: 6%; }
-  .logos-bar {
-    flex-wrap: wrap;
-    gap: 28px;
-    justify-content: center;
-  }
-  .logos-bar img {
-    height: 30px;
-  }
-
-  .bubble {
-    padding: 14px 12px;
-    width: calc(100% - 64px);
-  }
-  .bubble-num { font-size: 18px; }
-  .bubble-sub { font-size: 12px; }
-.partner-slider img{height:30px;}}
