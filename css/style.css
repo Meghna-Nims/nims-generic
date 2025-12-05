@@ -1223,6 +1223,16 @@ footer .row .col-md-4 .text-right {
   .scholar-title { font-size: 36px; }
   .scholar-hero .big { font-size: 24px; }
   .scholar-logo { width: 40%; }
+
+  .testimonials-inner {
+    padding-left: 120px;
+    grid-template-columns: 300px 1fr;
+    gap: 24px;
+  }
+  .quote-img { width: 72px; }
+  .cards-wrap { padding: 80px 18px; gap: 20px; }
+  .test-card { flex: 0 0 320px; height: 330px; padding: 20px; }
+
 }
 
 @media (max-width: 991.98px) {
@@ -1250,6 +1260,20 @@ footer .row .col-md-4 .text-right {
   .scholar-hero .big { font-size: 22px; }
   .scholar-logo { width: 50%; margin-bottom: 18px; }
   .scholar-btn { padding: 10px 22px; }
+
+  .testimonials-inner {
+    padding-left: 90px;
+    grid-template-columns: 280px 1fr;
+    gap: 5px;
+  }
+  .quote-img { width: 64px; }
+  .pattern-bg { left: 12%; }
+  .cards-wrap { padding: 68px 16px; gap: 18px; }
+  .test-card { flex: 0 0 300px; height: 320px; }
+
+  .card-text {
+    line-height: 1.2;
+  }
   
 }
 @media (max-width: 1199.98px) and (min-width: 769px) {
@@ -1297,6 +1321,40 @@ footer .row .col-md-4 .text-right {
     height: 1.5px;
   }
   
+   .testimonials-inner {
+    padding-left: 28px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+  .testimonials-left {
+    order: 1;
+    padding: 10px 0 6px 0;
+    align-self: flex-start;
+  }
+  .testimonials-right {
+    order: 2;
+    width: 100%;
+    min-height: 300px;
+    padding-top: 6px;
+  }
+  .quote-img { width: 65px;
+        align-self: flex-end; }
+  .testimonials-title { line-height: 1.15; }
+  .pattern-bg { display: block; left: 6%; opacity: 0.95; }
+  .cards-wrap {
+    padding: 40px 12px 28px;
+    gap: 14px;
+    scroll-snap-type: x mandatory;
+  }
+  .test-card {
+    flex: 0 0 325px;
+    height: auto;
+    min-height: 260px;
+    padding: 16px;
+  }
+  .card-text { font-size: 14px; line-height: 1.6; }
+  .mob-controls { display: flex; margin-top: 12px; }
 }
 @media (max-width: 575.98px) {
   .steps-title {
@@ -1346,4 +1404,33 @@ footer .row .col-md-4 .text-right {
   .scholar-hero .big { font-size: 18px; }
   .scholar-hero .sub { font-size: 12px; opacity: 0.95; }
   .scholar-btn { display: inline-block; padding: 9px 18px; font-size: 14px; }
+
+  .testimonials-section { padding: 32px 12px; margin: 40px 0; }
+  .testimonials-inner { padding-left: 12px; gap: 12px; }
+  .testimonials-left { padding: 6px 0 4px 0; }
+  .quote-img { width: 48px; }
+  .testimonials-title { font-size: 20px; color: var(--brand); }
+  .cards-wrap {
+    padding: 20px 8px;
+    gap: 12px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .test-card {
+    flex: 0 0 92%;
+    max-width: 92%;
+    height: auto;
+    min-height: 220px;
+    padding: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  }
+  .card-name { font-size: 16px; }
+  .card-meta { font-size: 13px; }
+  .card-text { font-size: 14px; line-height: 1.55; font-weight: 500; }
+  .mob-controls { display: flex; gap: 8px; justify-content: flex-end; margin-top: 10px; }
+  .mob-controls .btn { padding: 6px 10px; font-size: 14px; }
+  .cards-wrap::-webkit-scrollbar { height: 8px; }
+}
+
+.cards-wrap:focus { outline: none; }
+.test-card:focus { outline: none; box-shadow: 0 0 0 4px rgba(0,0,0,0.06); 
 }
