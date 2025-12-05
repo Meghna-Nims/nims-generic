@@ -1211,6 +1211,10 @@ footer .row .col-md-4 .text-right {
 
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 1199.98px) {
+   .accreditation-affiliation h3{font-size:32px;margin-bottom:36px;}
+  .acc-owl .card-item{max-width:340px;padding-top:56px;min-height:150px;margin-bottom:32px;}
+  .accreditation-affiliation .acc-owl .card-item .img{height:96px;width:96px;top:-48px;padding:11px;}
+  .acc-owl .card-item p{font-size:15px;}
   .scholarship-section {
     min-height: 520px;
     background-position: center right;
@@ -1234,10 +1238,21 @@ footer .row .col-md-4 .text-right {
 
     .partner-logos { padding:24px 0; }
   .partner-slider img { height:38px; }
-  
+    .programs-container { width: 92%; }
+  .programs-heading h3 { font-size: 34px; margin-bottom: 34px; }
+  .row-1 { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .row-2 { grid-template-columns: repeat(4, 1fr); max-width: 100%; margin: 18px auto; gap: 20px; }
+  .program-card { padding: 16px 18px; gap: 14px; }
+  .program-icon { width: 52px; height: 52px; }
+  .program-icon img { width: 30px; height: 30px; }
+  .program-card p { font-size: 13px; }
 }
 
 @media (max-width: 991.98px) {
+  .accreditation-affiliation h3{font-size:28px;margin-bottom:32px;}
+  .acc-owl .card-item{max-width:300px;padding-top:54px;min-height:145px;margin-bottom:28px;}
+  .accreditation-affiliation .acc-owl .card-item .img{height:90px;width:90px;top:-45px;padding:10px;}
+  .acc-owl .card-item p{font-size:15px;line-height:1.45;}
   .apply-steps .grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
@@ -1291,6 +1306,15 @@ min-width: 140px;;
 .timeline::before {
 width: 98%;
 }
+ .programs-container { width: 94%; }
+  .programs-heading h3 { font-size: 32px; margin-bottom: 30px; }
+  .row-1 { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .row-2 { grid-template-columns: repeat(2, 1fr); max-width: 500px; margin: 18px auto; gap: 18px; }
+  .program-card { padding: 14px 16px; gap: 12px; }
+  .program-icon { width: 48px; height: 48px; }
+  .program-icon img { width: 28px; height: 28px; }
+  .program-card p { font-size: 13px; line-height: 1.2; }
+
 }
 
 @media (max-width: 1199.98px) and (min-width: 769px) {
@@ -1318,6 +1342,19 @@ width: 98%;
 }
 
 @media (max-width: 769px) {
+  .accreditation-affiliation h3{font-size:24px;margin-bottom:26px;}
+  .acc-owl .card-item{max-width:260px;padding-top:52px;min-height:140px;margin-bottom:22px;}
+  .accreditation-affiliation .acc-owl .card-item .img{height:82px;width:82px;top:-41px;padding:9px;}
+  .acc-owl .card-item p{font-size:14px;line-height:1.45;}
+   .programs { padding: 48px 0; background-position: center; }
+  .programs-container { width: 96%; }
+  .programs-heading h3 { font-size: 28px; margin-bottom: 22px; }
+  .row-1, .row-2 { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .row-2 { max-width: 100%; margin: 14px auto 0; }
+  .program-card { padding: 12px 12px; gap: 10px; align-items: center; }
+  .program-icon { width: 46px; height: 46px; }
+  .program-icon img { width: 26px; height: 26px; }
+  .program-card p { font-size: 13px; font-weight:600; }
   .apply-steps .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -1381,6 +1418,19 @@ width: 95%;top: 38%;}
     padding: 18px;}
 }
 @media (max-width: 575.98px) {
+  .accreditation-affiliation h3{font-size:22px;margin-bottom:20px;}
+  .acc-owl .card-item{max-width:calc(50% - 12px);padding-top:48px;min-height:130px;margin-bottom:16px;}
+  .accreditation-affiliation .acc-owl .card-item .img{height:76px;width:76px;top:-38px;padding:8px;}
+  .acc-owl .card-item p{font-size:14px;line-height:1.4;}
+  .programs { padding: 32px 0; }
+  .programs-container { width: 100%; padding: 0 12px; }
+  .programs-heading h3 { font-size: 22px; margin-bottom: 18px; text-align: center; }
+  .row-1, .row-2 { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .program-card { padding: 12px 10px; gap: 10px; border-radius: 10px; }
+  .program-icon { width: 44px; height: 44px; }
+  .program-icon img { width: 24px; height: 24px; }
+  .program-card p { font-size: 12px; font-weight:600; display: -webkit-box;  -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; }
+
   .steps-title {
     font-size: 22px;
     margin-bottom: 18px;
@@ -1493,4 +1543,21 @@ width: 95%;top: 38%;}
   .bubble-sub{font-size:12px;line-height:1.35;}
   
 }
+@media (max-width:468px){
+  .accreditation-affiliation h3{font-size:20px;margin-bottom:16px;}
+  .acc-owl .card-item{max-width:100%;padding-top:44px;min-height:120px;margin-bottom:12px;}
+  .accreditation-affiliation .acc-owl .card-item .img{height:68px;width:68px;top:-34px;padding:6px;}
+  .acc-owl .card-item p{font-size:13px;line-height:1.4;}
+}
 
+
+
+
+
+
+@media (max-width:360px){
+  .row-1, .row-2 { grid-template-columns: repeat(1, 1fr); gap: 12px; }
+  .programs-heading h3 { font-size: 20px; }
+  .program-card { padding: 10px; }
+  .program-card p { font-size: 13px;}
+}
