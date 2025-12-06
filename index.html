@@ -22,6 +22,7 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Owl Crousal -->
     <link
@@ -277,7 +278,7 @@
    
     <!-- header start -->
     <header>
-        <div class="container py-2">
+        <div class="container-fluid py-2">
         <div
             class="d-flex align-items-center justify-content-between flex-wrap"
         >
@@ -383,7 +384,7 @@
         <div class="card left large-left">
             <div class="badge-pill outlook">Outlook</div>
             <div class="card-inner">
-            <p class="left-text">NIMS stands among India's best — its Law School &amp; Dental College ranks in the <strong>Top 30</strong>, Architecture &amp; Planning among the <strong>Top 16</strong>, and Engineering Institute among the <span>Top 160 nationwide.</span></p>
+            <p class="left-text">NIMS stands among India's best — its Law School &amp; Dental College ranks in the <strong>Top 30</strong>, Architecture &amp; Planning among the <strong>Top 16</strong>, and Engineering Institute among the <span>Top 160 Nationwide.</span></p>
             </div>
         </div>
 
@@ -600,7 +601,7 @@
         <div class="programs-heading">
         <h3>Industry Ready Programs</h3>
         </div>
-    <div class="programs-container">
+    <div class="container-fluid programs-container">
 
         <div class="programs-grid row-1">
 
@@ -708,7 +709,7 @@
 
     <!-- Placements Start-->
    <section class="placements" id="placements">
-  <div class="placements-container">
+  <div class=" container-fluid placements-container ">
 
     <div class="placements-title">
       <h3>Future is Here...</h3>
@@ -820,7 +821,7 @@
 
     <!-- stats start-->
     <section class="placements-timeline">
-    <div class="timeline-container">
+    <div class=" container-fluid timeline-container">
         <div class="timeline">
 
         <div class="timeline-item">
@@ -976,7 +977,7 @@
 
  <!-- Steps start-->
 <section class="apply-steps">
-    <div class="howtoapply container">
+    <div class="howtoapply container-fluid">
       <h3 class="steps-title">How to Apply</h3>
         <div class="row">
             <div class="grid position-relative">
@@ -1074,13 +1075,15 @@
     <p class="scholar-hero"><span class="big">Get up to 100% Scholarship</span><br><span class="sub">Empowering Every Student to Achieve Their Dreams.</span></p>
     <a href="#" class="scholar-btn">Apply today</a>
   </div>
-  <div class="scholar-watermark">Create Your Tomorrow</div>
+  <div data-no-reveal class="scholar-watermark">Create Your Tomorrow</div>
 </section>
 <!--next end-->
 
+<div id="applyNowBtn" class="apply-now-fixed">Apply Now</div>
+
     <!-- Footer start-->
     <footer>
-        <div class="container">
+        <div class="container-fluid">
         <div class="row align-items-center justify-content-between">
             <div class="col-md-12">
             <h4 class="text-white"><strong>Address</strong></h4>
@@ -1101,6 +1104,11 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
         <!-- Google Tag Manager (noscript) -->
         <noscript
           ><iframe

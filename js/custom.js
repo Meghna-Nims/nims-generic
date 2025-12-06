@@ -211,3 +211,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateSteps();
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const applyBtn = document.getElementById("applyNowBtn");
+  const firstSection = document.querySelector(".banner");
+  const formPanel = document.querySelector(".right-panel");
+
+  function toggleButton() {
+    const sectionBottom = firstSection.offsetTop + firstSection.offsetHeight;
+    const scrollPos = window.scrollY + window.innerHeight;
+
+    if (window.scrollY < sectionBottom - 120) {
+      applyBtn.classList.remove("show");
+    } else {
+      applyBtn.classList.add("show");
+    }
+  }
+
+  window.addEventListener("scroll", toggleButton);
+  toggleButton();
+
+  applyBtn.addEventListener("click", () => {
+    if (formPanel) {
+      formPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const blocks = document.querySelectorAll("body *");
+
+  blocks.forEach(el => {
+    if (!el.tagName) return;
+
+    if (
+      el.closest("header") ||
+      el.closest(".banner") ||
+      el.closest(".placements") ||
+      el.closest("#placements") ||
+      el.closest("footer") ||
+      el.closest(".partner-logos")
+    ) {
+      return;
+    }
+
+    if (["SCRIPT","STYLE","LINK","META","NOSCRIPT","SVG","PATH"].includes(el.tagName)) {
+      return;
+    }
+
+    el.classList.add("wow", "animate__animated", "animate__fadeInUp");
+    el.style.setProperty("--animate-duration", "2s");
+  });
+});
