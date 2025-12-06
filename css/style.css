@@ -601,7 +601,7 @@ header.fixed-header .contact-info {
 
 /*--- placements start---*/
 .placements {
-  padding: 70px 16px 80px;
+  padding: 38px 16px 80px;
   background: #fff;
   margin-bottom: 70px;
 }
@@ -624,8 +624,9 @@ header.fixed-header .contact-info {
 
 
 .placements-row {
+  height: 240px;
   display: flex !important;
-  gap: 90px !important;
+  gap: 0px !important;
   justify-content: center !important;
   flex-wrap: wrap !important;
   align-items: flex-end !important;
@@ -1201,6 +1202,21 @@ header.fixed-header .contact-info {
   font-weight: 700;
   text-decoration: none;
 }
+.scholarship-section {
+  position: relative;
+}
+
+.scholar-watermark{
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 48px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.18);
+  pointer-events: none;
+  white-space: nowrap;
+}
 
 /*--- next scholarship end ---*/
 /*-----footer start----*/
@@ -1230,8 +1246,7 @@ footer .row .col-md-4 .text-right {
 
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 1199.98px) {
-  .placements-timeline {
- margin-top: -48% !important;}
+ 
    header { padding:16px 0; }
   .logo-slider-main img { height:42px; }
   header #headerLogoSlider { max-width:130px; }
@@ -1239,10 +1254,11 @@ footer .row .col-md-4 .text-right {
 h3{
   font-size: 32px!important;
 }
- .banner{height:auto;padding:80px 0;}
+ .banner{height:70vh;
+  padding:80px 0;}
   .banner-inner{flex-direction:column;gap:40px;align-items:center;}
-  .left-card{width:70%;padding:38px;}
-  .right-panel{width:420px;max-width:95%;margin:0 auto;top:0;position:relative;}
+  .left-card{width:70%;padding:38px;    text-align: center;}
+  .right-panel{width:420px;max-width:95%;margin:0 auto;top:0;position:relative; box-shadow: 0 26px 26px rgba(168, 0, 52, 0.24);}
 .steps-title{
     font-size: 32px;}
    .rankings-wrap{padding:18px 14px 48px;}
@@ -1309,6 +1325,11 @@ margin-right: 80px !important;
   .program-icon { width: 52px; height: 52px; }
   .program-icon img { width: 30px; height: 30px; }
   .program-card p { font-size: 13px; }
+.scholar-watermark{
+  font-size: 40px;
+  bottom: -6px;
+}
+
 }
 
 @media (max-width: 991.98px) {
@@ -1322,13 +1343,15 @@ margin-right: 80px !important;
   .contact-info small { font-size:10px; }
 
   .banner{padding:70px 0;}
-  .banner-inner{max-width:90%;gap:36px;}
+  .banner-inner{max-width:90%;gap:36px; margin-top: 160px;}
   .left-card{padding:34px;}
   .headline{font-size:36px;line-height:1.15;}
   .subheadline{font-size:20px;}
-  .right-panel{max-width:480px;top:12px;}
+  .right-panel{width:100%; max-width:65%;top:12px;}
 
-  
+.rankings-section{
+  padding-top: 160px !important;
+}  
   .accreditation-affiliation h3{font-size:28px;margin-bottom:32px;}
   .acc-owl .card-item{max-width:300px;padding-top:54px;min-height:145px;margin-bottom:28px;}
   .accreditation-affiliation .acc-owl .card-item .img{height:90px;width:90px;top:-45px;padding:10px;}
@@ -1437,18 +1460,20 @@ width: 98%;
   .contact-info { display:flex; gap:8px; align-items:center; justify-content:flex-end; padding:6px 10px; }
   .contact-info img { height:20px; width:auto; }
 
-  .banner{padding:60px 0;}
-  .banner-inner{gap:32px;max-width:92%;}
+  .banner{height:50vh; padding:60px 0;}
+  .banner-inner{gap:12px;max-width:92%;margin-top: 370px;}
   .left-card{padding:28px;}
   .headline{font-size:32px;}
   .subheadline{font-size:18px;}
   .logos{flex-wrap:wrap;gap:10px;}
   .logo{min-width:70px;height:32px;}
   .logo img{height:22px;}
-  .right-panel{max-width:100%;top:10px;}
+  .right-panel{max-width:65%;top:10px;}
 h3{
   font-size: 24px!important;
 }
+.rankings-section{
+  padding-top: 380px !important;}
   .accreditation-affiliation h3{font-size:24px;margin-bottom:26px;}
   .acc-owl .card-item{max-width:260px;padding-top:52px;min-height:140px;margin-bottom:22px;}
   .accreditation-affiliation .acc-owl .card-item .img{height:82px;width:82px;top:-41px;padding:9px;}
@@ -1456,7 +1481,7 @@ h3{
    .programs { padding: 48px 0; background-position: center; }
   .programs-container { width: 96%; }
   .programs-heading h3 { font-size: 28px; margin-bottom: 22px; }
-  .row-1, .row-2 { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .row-1, .row-2 { grid-template-columns: repeat(3, 1fr); gap: 14px; }
   .row-2 { max-width: 100%; margin: 14px auto 0; }
   .program-card { padding: 12px 12px; gap: 10px; align-items: center; }
   .program-icon { width: 46px; height: 46px; }
@@ -1491,8 +1516,7 @@ h3{
 margin-left: 30px !important;
 margin-right: 80px !important;
 }
-.placements-timeline {
-margin-top: -60% !important;}
+
    .testimonials-inner {
     padding-left: 28px;
     grid-template-columns: 1fr;
@@ -1580,8 +1604,7 @@ width: 95%;top: 38%;}
   transform: scale(0.88) !important;
   margin-left: -30px !important;
 }
-.placements-timeline {
-margin-top: -125% !important;}
+
 .placements-row{
   margin: -30px auto !important;
 }
