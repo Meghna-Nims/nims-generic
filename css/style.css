@@ -1349,7 +1349,7 @@ margin-right: 80px !important;
   .left-card{padding:34px;}
   .headline{font-size:36px;line-height:1.15;}
   .subheadline{font-size:20px;}
-  .right-panel{width:100%; max-width:65%;top:12px;}
+  .right-panel{width:100%; max-width:60%;top:12px;}
 
 .rankings-section{
   padding-top: 160px !important;
@@ -1470,7 +1470,7 @@ width: 98%;
   .logos{flex-wrap:wrap;gap:10px;}
   .logo{min-width:70px;height:32px;}
   .logo img{height:22px;}
-  .right-panel{max-width:65%;top:10px;}
+  .right-panel{max-width:60%;top:10px;}
 h3{
   font-size: 24px!important;
 }

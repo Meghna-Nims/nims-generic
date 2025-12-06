@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
     (function ($) {
       $(".partner-slider").owlCarousel({
         loop: true,
-        margin: 30,
         nav: false,
         dots: false,
         autoplay: true,
@@ -50,11 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
         autoplaySpeed: 1400,
         autoplayHoverPause: false,
         responsive: {
-          0: { items: 3, margin: 20 },
-          480: { items: 4, margin: 30 },
-          768: { items: 5 },
+          0: { items: 4, margin: 20 },
+          480: { items: 5, margin: 30 },
+          768: { items: 7 },
           1024: { items: 7 },
-          1400: { items: 8 }
+          1400: { items: 7 }
         }
       });
 //testimonials
