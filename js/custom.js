@@ -16,6 +16,27 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+  //placements slider
+  $(".placements-slider").owlCarousel({
+  loop: true,
+  margin: 20,
+  center: true,
+  stagePadding: 60,
+  nav: false,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: false,
+  smartSpeed: 2000,
+  items: 1,
+  responsive: {
+    0:   { items: 1, stagePadding: 40 },
+    576: { items: 1.2, stagePadding: 50 },
+    768: { items: 2, stagePadding: 60 },
+    992: { items: 3, stagePadding: 60 }
+  }
+});
+
 //logo slider
   if (window.jQuery) {
     (function ($) {
