@@ -237,14 +237,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 document.addEventListener("DOMContentLoaded", () => {
+  const width = window.innerWidth;
   const blocks = document.querySelectorAll("body *");
 
   blocks.forEach(el => {
     if (!el.tagName) return;
 
+    let isBanner = el.closest(".banner") !== null;
+
+    if (width >= 1200 || width <= 574) {
+      if (isBanner) return;
+    }
+
     if (
       el.closest("header") ||
-      el.closest(".banner") ||
       el.closest(".placements") ||
       el.closest("#placements") ||
       el.closest("footer") ||
