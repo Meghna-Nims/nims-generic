@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     (function ($) {
       $(".partner-slider").owlCarousel({
         loop: true,
-        margin: 60,
+        margin: 30,
         nav: false,
         dots: false,
         autoplay: true,
