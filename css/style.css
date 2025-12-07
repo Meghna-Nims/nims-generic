@@ -883,24 +883,33 @@ header.fixed-header .contact-info {
 /*---logos start---*/
 
 .partner-logos {
-  background:#000;
-  padding:26px 0;
-  position:relative;
-  overflow:hidden;
+      padding: 26px 0;
+    position: relative;
+    overflow: hidden;
 }
-/*
+.partner-logos .partner-slider{
+    position: relative;
+    z-index: 8;
+    background: #000;
+    padding: 20px 0;
+}
+
+
+
 .partner-logos::after {
-  content:"";
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:130%;
-  height:18px;
-  background:#f7a500;
-  transform:skewX(-12deg);
-  transform-origin:left;
+ content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+    width: 100%;
+    height: 84px;
+    background: #f7a500;
+    transform: rotate(1deg);
+    transform-origin: left;
+    z-index: 0;
 }
-  */
+ 
 .partner-slider img {
   height:42px;
   width:auto;
@@ -1273,7 +1282,7 @@ footer .row .col-md-4 .text-right {
 
 .apply-now-fixed.show{
   opacity: 1;
-  visibility: visible;
+  visibility: visible !important;
 }
 
 
@@ -1499,7 +1508,7 @@ width: 98%;
   .left-card{padding:28px;}
   .headline{font-size:32px;}
   .subheadline{font-size:18px;}
-  .logos{flex-wrap:wrap;gap:10px;}
+  .logos{flex-wrap:wrap;gap:10px;justify-content: center;}
   .logo{min-width:70px;height:32px;}
   .logo img{height:22px;}
   .right-panel{max-width:60%;top:10px;}
@@ -1587,6 +1596,11 @@ margin-right: 80px !important;
   .mob-controls { display: flex; margin-top: 12px; }
     .partner-logos { padding:20px 0; }
   .partner-slider img { height:20px; }
+  .partner-logos::after {
+  bottom: 27px;
+   
+    height: 60px;
+  }
     .timeline::before {
 width: 95%;top: 38%;}
   .bubble {
@@ -1628,6 +1642,15 @@ width: 95%;top: 38%;}
   .scholar{margin-top: 14px;}
   .right-panel{max-width:100%;top:16px; min-height: 370px;}
 
+
+  .large-left p span{
+    font-size: 15px !important;
+    font-weight: 500 !important;
+  }
+  .large-right p span{
+    font-size: 15px !important;
+    font-weight: 500 !important;
+  }
   .accreditation-affiliation h3{font-size:22px;margin-bottom:20px;}
   .acc-owl .card-item{max-width:calc(50% - 12px);padding-top:48px;min-height:130px;margin-bottom:16px;}
   .accreditation-affiliation .acc-owl .card-item .img{height:76px;width:76px;top:-38px;padding:8px;}
@@ -1842,14 +1865,16 @@ width: 95%;top: 38%;}
       scroll-snap-type:x mandatory;
       -webkit-overflow-scrolling:touch;
       padding-bottom:10px;
+      flex-direction: column;
   }
 
   .grid > div{
       flex:0 0 85%;
       scroll-snap-align:center;
       display:flex;
-      flex-direction:column;
+      flex-direction:row;
       gap:16px;
+      flex-wrap: nowrap;
   }
 
   .top-left, .top-center, .top-right,
@@ -1894,7 +1919,7 @@ width: 95%;top: 38%;}
   }
 
   .center-stack{
-      flex-direction:column;
+      flex-direction:column !important;
   }
 
   .center-stack .cert{
@@ -1907,6 +1932,9 @@ width: 95%;top: 38%;}
     .rankings-wrap h3 {
 
       margin-bottom: 20px;}
+          .partner-logos::after {
+        bottom: 23px;
+        height: 60px;}
 }
 @media (max-width:468px){
   .banner{padding:46px 0;}

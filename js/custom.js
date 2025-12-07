@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
   smartSpeed: 2000,
   items: 1,
   responsive: {
-    0:   { items: 1, stagePadding: 40 },
-    576: { items: 1.2, stagePadding: 50 },
-    768: { items: 2, stagePadding: 60 },
-    992: { items: 3, stagePadding: 60 }
+    0:   { items: 1, stagePadding: 30 },
+    576: { items: 1.2, stagePadding: 40 },
+    768: { items: 2, stagePadding: 40 },
+    992: { items: 3, stagePadding: 20 }
   }
 });
 
