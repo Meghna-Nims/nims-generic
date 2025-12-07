@@ -264,6 +264,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     el.classList.add("wow", "animate__animated", "animate__fadeInUp");
-    el.style.setProperty("--animate-duration", "2s");
+
+    if (width <= 575) {
+      el.style.setProperty("--animate-duration", "1s");
+    } else {
+      el.style.setProperty("--animate-duration", "2s");
+    }
   });
 });
